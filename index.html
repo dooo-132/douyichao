@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Yichao Dou, undergraduate mathematics student at Tsinghua University.">
+  <title>Yichao Dou | Academic Homepage</title>
+
+  <style>
+    :root {
+      --primary: #183b63;
+      --text: #293241;
+      --secondary: #667085;
+      --border: #e5e7eb;
+      --background: #ffffff;
+      --soft: #f6f8fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 14px;
+      color: var(--secondary);
+    }
+
+    .nav-links a:hover,
+    a:hover {
+      color: #3476b5;
+    }
+
+    main {
+      padding-top: 60px;
+      padding-bottom: 75px;
+    }
+
+    .intro {
+      padding-bottom: 35px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 42px;
+      line-height: 1.3;
+      letter-spacing: -1px;
+      color: var(--primary);
+    }
+
+    .position {
+      font-size: 18px;
+      color: var(--secondary);
+      margin: 6px 0;
+    }
+
+    .university {
+      font-size: 17px;
+      margin: 4px 0;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    section {
+      padding-top: 36px;
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: var(--primary);
+      margin: 0 0 18px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: var(--soft);
+      color: var(--primary);
+      font-size: 14px;
+    }
+
+    .research-item {
+      margin-top: 24px;
+    }
+
+    .research-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .research-description {
+      color: var(--text);
+    }
+
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .school {
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    .degree {
+      color: var(--secondary);
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 22px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 35px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#">Yichao Dou</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Introduction -->
+    <div class="intro">
+      <h1>Yichao Dou</h1>
+
+      <p class="position">
+        Undergraduate Student in Mathematics
+      </p>
+
+      <p class="university">
+        Tsinghua University
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:YOUR_EMAIL@example.com">
+          Email
+        </a>
+        <a href="https://github.com/YOUR_USERNAME"
+           target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        I am an undergraduate student majoring in
+        Mathematics at Tsinghua University.
+      </p>
+
+      <p>
+        My research interests lie at the intersection
+        of machine learning, representation learning,
+        and recommender systems, with a particular
+        focus on generative recommendation and
+        discrete semantic representations.
+      </p>
+
+      <p>
+        I am interested in exploring how mathematical
+        structures and learning algorithms can
+        contribute to effective and scalable
+        intelligent systems.
+      </p>
+    </section>
+
+    <!-- Research Interests -->
+    <section>
+      <h2>Research Interests</h2>
+
+      <div class="interests">
+        <span class="tag">Generative Recommendation</span>
+        <span class="tag">Recommender Systems</span>
+        <span class="tag">Representation Learning</span>
+        <span class="tag">Semantic ID</span>
+        <span class="tag">Vector Quantization</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Optimization</span>
+      </div>
+    </section>
+
+    <!-- Research Experience -->
+    <section id="research">
+      <h2>Research Experience</h2>
+
+      <div class="research-item">
+        <div class="research-title">
+          Semantic ID Construction for
+          Generative Recommendation
+        </div>
+
+        <p class="research-description">
+          My research explores semantic
+          identification methods for generative
+          recommendation systems, including
+          discrete representation learning,
+          vector quantization, and
+          clustering-based approaches.
+        </p>
+
+        <p>
+          I have investigated different Semantic
+          ID construction strategies, including
+          residual quantization, RQ-VAE,
+          and spectral clustering-based methods.
+        </p>
+
+        <p>
+          I am also interested in multi-granularity
+          semantic representations and their
+          integration into sequential
+          generative recommendation frameworks.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <div>
+          <div class="school">
+            Tsinghua University
+          </div>
+
+          <div class="degree">
+            Undergraduate, Mathematics
+          </div>
+
+          <div>
+            Beijing, China
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        I welcome academic discussions
+        and research collaborations.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:YOUR_EMAIL@example.com">
+          YOUR_EMAIL@example.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Affiliation:</strong>
+        Tsinghua University, Beijing, China
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Yichao Dou · Academic Homepage
+    </div>
+  </footer>
+
+</body>
+</html>
